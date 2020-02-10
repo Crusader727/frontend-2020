@@ -4,26 +4,16 @@ on: [push]
 
 jobs:
   build:
-
-    runs-on: ubuntu-latest
-
+    runs-on: ubuntu-16.04
     strategy:
       matrix:
-        node-version: [10.x]
-
+        labs: [ '1', '2' ]
+    name: Node 10 sample
     steps:
-    - uses: actions/checkout@v2
-    - name: build
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - name: install
-      run: npm install
-    - name: lab1
-      run: npm run test-lab-1
-      env:
-        CI: true
-    - name: lab2
-      run: npm run test-lab-2
-      env:
-        CI: true
+      - uses: actions/checkout@v2
+      - name: Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 10
+      - run: npm install
+      - run: npm run test-lab-${{ matrix.lab }}
