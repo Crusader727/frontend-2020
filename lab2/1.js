@@ -6,7 +6,7 @@
  * 'я Вижу солнце' -> 'Я Вижу Солнце'
  */
 function capitalize(str) {
-    return str;
+    return str + str;
 }
 
 module.exports = capitalize;
