@@ -11,7 +11,9 @@
     "jest": "^25.1.0"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test-lab-1": "jest lab1.test.js",
+    "test-lab-2": "jest lab2.test.js"
   },
   "repository": {
     "type": "git",
