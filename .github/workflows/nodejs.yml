@@ -1,14 +1,11 @@
 name: Labs Test
 
-on: [push]
+on: push
 
 jobs:
-  build:
+  lab1:
     runs-on: ubuntu-16.04
-    strategy:
-      matrix:
-        labs: [ '1', '2' ]
-    name: Lab# ${{ matrix.labs }}
+    name: Lab №1
     steps:
       - uses: actions/checkout@v2
       - name: Setup node
@@ -16,4 +13,16 @@ jobs:
         with:
           node-version: 10
       - run: npm install
-      - run: npm run test-lab-${{ matrix.labs }}
+      - run: npm run test-lab-1
+  lab2:
+    runs-on: ubuntu-16.04
+    name: Lab №2
+    needs: [lab1]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 10
+      - run: npm install
+      - run: npm run test-lab-2
