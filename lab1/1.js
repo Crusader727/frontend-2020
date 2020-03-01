@@ -6,7 +6,8 @@
  * 'я Вижу солнце' -> 'Я Вижу Солнце'
  */
 function capitalize(str) {
-    // code here
+    return str.split(' ').map((symb) => symb[0].toUpperCase() + symb.slice(1)).join(' ');
 }
 
 module.exports = capitalize;
+    
