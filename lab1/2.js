@@ -14,11 +14,11 @@ let MinMax = {
 	max: Number.MIN_VALUE
 };
 
-	str.split(/\ |,/).map((el) => {
-		let NumEl = Number(el);
-  	  if (NumEl < MinMax.min) {MinMax.min = NumEl;} else
-  	  if (NumEl > MinMax.max) {MinMax.max = NumEl;}
-	});
+let MinMaxArr = str.split(/\ |,/).filter((el) => !isNaN(+el) && el != "");
+
+MinMax.min = Math.min.apply(Math, MinMaxArr);
+MinMax.max = Math.max.apply(Math, MinMaxArr);
+
 return MinMax;
 }
 
