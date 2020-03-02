@@ -9,6 +9,9 @@
  */
 function getMinMax(str) {
     // code here
+    let numb=str.split(/\s*,\s*| /).filter(elem => !isNaN(elem) );
+    return {min: Math.min(...numb), max: Math.max(...numb)}
+
 }
 
 module.exports = getMinMax;

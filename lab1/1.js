@@ -7,6 +7,6 @@
  */
 function capitalize(str) {
     // code here
+    return str.split(' ').map(elem=>elem[0].toUpperCase()+elem.slice(1)).join(' ')
 }
-
 module.exports = capitalize;

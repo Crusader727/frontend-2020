@@ -8,6 +8,7 @@
  */
 function multiplyArray(arr, n) {
     // code here
+    return arr.map((elem)=>typeof(elem)==='number'? elem*n:elem)
 }
 
 module.exports = multiplyArray;
