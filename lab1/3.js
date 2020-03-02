@@ -7,7 +7,11 @@
  * [1, 2, 3, 'ddd', {min: 1}, 22, false], 2 -> [2, 4, 6, 'ddd', {min: 1}, 44, false]
  */
 function multiplyArray(arr, n) {
-    // code here
+    return arr.map(numb => parseFloat(numb) ? numb * n : numb);
 }
 
 module.exports = multiplyArray;
+/*я использовал условный оператор ? https://learn.javascript.ru/ifelse 
+* не знаю почему, но у меня в какой-то момент перестал нормально работать test и я сам прогонял в консоли firefox (μ_μ)
+*
+*/
