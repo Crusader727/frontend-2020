@@ -9,4 +9,5 @@ function capitalize(str) {
     return str.replace(/(!\s|\s)\S/g, function(firstSymbol) { return firstSymbol.toUpperCase()})   
    }
 module.exports = capitalize;
-/* я использовал символьные классы https://learn.javascript.ru/regexp-character-classes*/
+/* я использовал символьные классы https://learn.javascript.ru/regexp-character-classes
+*/
