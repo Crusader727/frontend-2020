@@ -9,7 +9,7 @@
  */
 function getMinMax(str) {
     let arr = str.split(/\ |,/).map(numbStr => parseFloat(numbStr)).filter(isFinite);
-    return { min: Math.min.apply(null,arr), max: Math.max.apply(null,arr) };
+    return { min: Math.min(...arr), max: Math.max(...arr) };
 }
 
 module.exports = getMinMax;
