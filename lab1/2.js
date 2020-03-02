@@ -9,7 +9,7 @@
  */
 function getMinMax(str) {
 	let MinMaxArr = str.split(/\ |,/).filter((el) => !isNaN(+el) && el != "");
-	return { min: Math.min.apply(Math, MinMaxArr), max: Math.max.apply(Math, MinMaxArr) };
+	return { min: Math.min(...MinMaxArr), max: Math.max(...MinMaxArr) };
 }
 
 module.exports = getMinMax;
