@@ -7,8 +7,11 @@
  * Примеры:
  * '22 и 3.35, -2, 28, а потом 13, может 1.2 и -134' -> {min: -134, max: 28}
  */
+
 function getMinMax(str) {
-    // code here
+  //больше 100 символов в строчку нельзя?
+  mass = str.split(/[ ,!?]/).map(index => parseFloat(index, 10)).filter(index => !isNaN(index) && typeof index === 'number');
+  return { min: Math.min(...mass), max: Math.max(...mass) };
 }
 
 module.exports = getMinMax;
