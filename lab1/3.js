@@ -13,5 +13,4 @@ function multiplyArray(arr, n) {
 module.exports = multiplyArray;
 /*я использовал условный оператор ? https://learn.javascript.ru/ifelse 
 * не знаю почему, но у меня в какой-то момент перестал нормально работать test и я сам прогонял в консоли firefox (μ_μ)
-*
 */
