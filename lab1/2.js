@@ -10,11 +10,7 @@
 function getMinMax(str) {
     let numbers = str.match(/[+-]?\d+(?:\.\d+)?/g).map(Number);
     // return ALL and EACH number, including float and signs +-
-    let result = {
-        "max": Math.max.apply(null, numbers),
-        "min": Math.min.apply(null, numbers)
-    };
-    return result
+    return {max: Math.max.apply(null, numbers), min: Math.min.apply(null, numbers)}
 }
 
 module.exports = getMinMax;

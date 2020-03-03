@@ -7,12 +7,7 @@
  * [1, 2, 3, 'ddd', {min: 1}, 22, false], 2 -> [2, 4, 6, 'ddd', {min: 1}, 44, false]
  */
 function multiplyArray(arr, n) {
-    for (let i = 0; i < arr.length; i++)
-    {
-        if (isFinite(arr[i]) && (typeof arr[i] != 'boolean'))
-        arr[i] *= n;
-    }
-    return arr;
+    return arr.map(element => (isFinite(element) && (typeof element != 'boolean') ? element *= n : element))
 }
 
 module.exports = multiplyArray;
