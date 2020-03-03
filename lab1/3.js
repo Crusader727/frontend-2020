@@ -6,8 +6,12 @@
  * Примеры:
  * [1, 2, 3, 'ddd', {min: 1}, 22, false], 2 -> [2, 4, 6, 'ddd', {min: 1}, 44, false]
  */
+
 function multiplyArray(arr, n) {
-    // code here
+    return arr.map(element => 
+        typeof(element) === 'number' ? element * n : element); 
+    
 }
 
 module.exports = multiplyArray;
+
