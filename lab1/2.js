@@ -8,7 +8,13 @@
  * '22 и 3.35, -2, 28, а потом 13, может 1.2 и -134' -> {min: -134, max: 28}
  */
 function getMinMax(str) {
-    // code here
+    let numbers = str.match(/[+-]?\d+(?:\.\d+)?/g).map(Number);
+    // return ALL and EACH number, including float and signs +-
+    let result = {
+        "max": Math.max.apply(null, numbers),
+        "min": Math.min.apply(null, numbers)
+    };
+    return result
 }
 
 module.exports = getMinMax;
