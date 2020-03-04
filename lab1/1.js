@@ -6,7 +6,7 @@
  * 'я Вижу солнце' -> 'Я Вижу Солнце'
  */
 function capitalize(str) {
-    // code here
+	return str.split(" ").map(el => el[0].toUpperCase() + el.slice(1)).join(" ");
 }
 
 module.exports = capitalize;
