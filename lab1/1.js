@@ -13,4 +13,3 @@ function capitalize(str) {
 }
 module.exports = capitalize;
 
-console.log(capitalize("Я Вижу Солнце ввв"));
