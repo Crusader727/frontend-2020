@@ -8,7 +8,10 @@
  * '22 и 3.35, -2, 28, а потом 13, может 1.2 и -134' -> {min: -134, max: 28}
  */
 function getMinMax(str) {
-    // code here
+    let arr2 = str.split(/\ |, /).filter(item => parseFloat(item));
+    let max = Math.max(...arr2);
+    let min= Math.min(...arr2);
+    return  {min: min, max: max};
 }
 
 module.exports = getMinMax;

@@ -7,7 +7,10 @@
  * [1, 2, 3, 'ddd', {min: 1}, 22, false], 2 -> [2, 4, 6, 'ddd', {min: 1}, 44, false]
  */
 function multiplyArray(arr, n) {
-    // code here
+    return arr.map(item => {
+        if (parseFloat(item)) return item *= n
+        else return item
+    });
 }
 
 module.exports = multiplyArray;
