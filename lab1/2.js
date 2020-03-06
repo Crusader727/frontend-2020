@@ -9,6 +9,8 @@
  */
 function getMinMax(str) {
     // code here
+    let arr = str.split(/\s*.*,*:*!*;*\s/).map(num => parseFloat(num)).filter(isNaN);
+    return { min: Math.min(...arr), max: Math.max(...arr) };
 }
 
 module.exports = getMinMax;

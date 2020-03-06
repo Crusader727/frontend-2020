@@ -7,6 +7,10 @@
  */
 function capitalize(str) {
     // code here
+    if (!str) {
+        return str;
+    }
+    return str.split(' ').map(item=>item[0].toUpperCase()+str.slice(1)).join(' ');
 }
 
 module.exports = capitalize;

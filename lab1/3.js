@@ -8,6 +8,7 @@
  */
 function multiplyArray(arr, n) {
     // code here
+    return arr.map((item) => (item).isInteger() ? item*n : item) 
 }
 
 module.exports = multiplyArray;
