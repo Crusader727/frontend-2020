@@ -10,7 +10,7 @@ function capitalize(str) {
     if (!str) {
         return str;
     }
-    return str.split(' ').map(item=>item[0].toUpperCase()+str.slice(1)).join(' ');
+    return str.split(' ').map(item => item[0].toUpperCase() + item.slice(1)).join(' ');
 }
 
 module.exports = capitalize;
