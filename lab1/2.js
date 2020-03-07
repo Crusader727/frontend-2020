@@ -9,16 +9,14 @@
  */
 function getMinMax(str) {
     // code here
-    let razdel = /-?\d+(\.\d+)?/g;
-    let chisl  = str.match(razdel);
-    if (chisl==null) {
+    let numberRegExp = /-?\d+(\.\d+)?/g;
+    let nums  = str.match(numberRegExp);
+    if (nums===null) {
         return null;
     }
 
-    let result = {};
-    result.min = Math.min(...chisl);
-    result.max = Math.max(...chisl);
-    return result;
+
+    return {min: Math.min(...nums), max: Math.max(...nums)};
 
 }
 

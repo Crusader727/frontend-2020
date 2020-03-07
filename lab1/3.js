@@ -6,16 +6,10 @@
  * Примеры:
  * [1, 2, 3, 'ddd', {min: 1}, 22, false], 2 -> [2, 4, 6, 'ddd', {min: 1}, 44, false]
  */
-function rem(item) { 
-  if (typeof item === "number") { 
-  item *= this; 
-  } 
-  return item; 
-  } 
-  
+
 function multiplyArray(arr, n) {
   // code here
-  console.log(arr.map(rem,n));
+  return(arr.map((el)=> typeof el === 'number' ? el * n :el));
 }
 
 
