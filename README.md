@@ -36,14 +36,14 @@
 #### 1. Github Pages.
 Github Pages это сервис, для отдачи статических фалов.
 Для его использования нужно просто создать репозиторий с названием `<username>.github.io`.
-И вот магия - все рабоитает!
+И вот магия - все работает!
 - необходимо залить файлик в корень репозитория `index.html`, и он станет доступен по урлу `https://<username>.github.io.`
 [Подробная инструкция](https://pages.github.com/).
 #### 2. Задание на 2 лабораторную.
-- необходимо сверстать статью из Медиума. [Вот ссылка](https://medium.mybridge.co/learn-javascript-from-top-50-articles-for-the-past-year-v-2019-57a26f277f47)
+- необходимо сверстать статью из Медиума. [Вот ссылка](https://medium.mybridge.co/learn-javascript-from-top-50-articles-for-the-past-year-v-2019-57a26f277f47).
 - начиная от начала статьи и до `Tutorials are divided into 17 relevant groups (see below).`
 - шапка должна быть закреплена, если получится сделать красивую анимацию при скролле, будет супер!
-- для отправки на проверку нужно будет заполнить в [табличку](https://docs.google.com/spreadsheets/d/17eyaUMGS_Sl31opHd77E1FHko6_u_FvFGolfbuM8FME/edit#gid=0) ссылку на репозиторй и на веб-сайт
+- для отправки на проверку нужно будет заполнить в [табличку](https://docs.google.com/spreadsheets/d/17eyaUMGS_Sl31opHd77E1FHko6_u_FvFGolfbuM8FME/edit#gid=0) ссылку на репозиторй и на развернутый проект.
   
 
 
