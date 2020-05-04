@@ -116,6 +116,7 @@ Firebase - облачная СУБД с открытым API.
 Для диплоя на github pages вам необходимо будет собрать продовую сборку npm run build, и файлик который вам соберется залить на Github Pages, в папку  lab5.
 
 Для получения текущего курса, можете использовать API https://exchangeratesapi.io/
+
 пример тспользования: https://api.exchangeratesapi.io/latest?base=RUB
 
 
